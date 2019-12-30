@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <h1>{{my_text}}
+    {{user_name}}
+    {{number}}
+    {{adress}}</h1>
+</head>
+
+
+<style>
+ h1 {
+  color: rgba(33, 115, 47, 0.88);
+}
+ .knopka {
+  background-color: #3da397;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+ .knopka {border-radius: 12px;}
+    body {
+  background: radial-gradient(circle, darkseagreen, white);
+}
+
+</style>
+
+
+
+<body>
+<form action='http://127.0.0.1:5000/doctor/info' method="POST">
+	<button class="knopka" >Информация о пациентах</button>
+</form>
+<form action='http://127.0.0.1:5000/doctor/collegs' method="POST">
+	<button class="knopka" >Информация о коллегах</button>
+</form>
+<form action='http://127.0.0.1:5000/doctor/add' method="POST">
+	<button class="knopka" >Добавить пациента</button>
+</form>
+<form action='http://127.0.0.1:5000/doctor/search' method="POST">
+	<button class="knopka" >Поиск по пациентам</button>
+</form>
+<form action='http://127.0.0.1:5000/doctor/observs' method="POST">
+	<button class="knopka" >Добавить наблюдения</button>
+</form>
+<form action='http://127.0.0.1:5000/doctor/delete' method="POST">
+    <p><input class = "knopka" type="submit" value="Удалить пациента"></p>
+</form>
+
+  <tr>
+      <td>{{ table|safe }}</td>
+
+    </tr>
+
+  <tr>
+      <td>{{ table1|safe }}</td>
+
+    </tr>
+</body>
+
+<form action='http://127.0.0.1:5000/' method="POST">
+    <p><input class = "knopka" type="submit" value="Домашняя страница"></p>
+</form>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<h1>{{my_text}}</h1>
+</head>
+
+<style>
+ h1 {
+  color: rgba(33, 115, 47, 0.88);
+}
+ .btn {
+  background-color: #3da397;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+ .btn {border-radius: 12px;}
+    body {
+  background: radial-gradient(circle, darkseagreen, white);
+}
+
+</style>
+<body>
+    <tr>
+      <td>{{ table|safe }}</td>
+    </tr>
+</body>
+<form method="POST" action="http://127.0.0.1:5000/patient/password">
+    <label for="password">Password:  </label><input type = "password" id="password" name="password"/>
+    <p><input class="btn" type="submit" value="Отправить"></p>
+</form>
+
+<form action='http://127.0.0.1:5000/' method="POST">
+    <p><input class="btn" type="submit" value="Назад"></p>
+</form>
+</html>
