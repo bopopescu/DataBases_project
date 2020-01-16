@@ -7,11 +7,12 @@ global password_global
 password_global = ''
 
 connection = psycopg2.connect(""" 
-    host=rc1a-mmz236qxgctepf1c.mdb.yandexcloud.net port=6432 dbname=hospital
-    user=ulyannah
-    password=z%MPnbcysNZo
-    target_session_attrs=read-write 
-    sslmode=verify-full 
+    host=
+    port=
+    dbname=hospital
+    user=
+    password=
+    target_session_attrs= 
     """)
 
 
